@@ -21,7 +21,7 @@ type server struct {
 }
 
 // SayHello implements service.MaxSize
-func (s *server) Echo(ctx context.Context, in *pb.Empty) (*pb.StringMessage, error) {
+func Echo(ctx context.Context, in *pb.Empty) (*pb.StringMessage, error) {
 	return &pb.StringMessage{}, nil
 }
 
