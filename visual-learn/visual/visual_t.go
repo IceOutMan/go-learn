@@ -6,9 +6,9 @@ const PI = 3.14
 const pi = 3.14
 
 func private_func() {
-	fmt.Print("private func")
+	fmt.Println("private func")
 }
 
 func Public_func() {
-	fmt.Print("public func")
+	fmt.Println("public func")
 }

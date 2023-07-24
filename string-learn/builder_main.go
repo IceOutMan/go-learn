@@ -1,8 +1,16 @@
 package main
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
+
+func test() {
+	fmt.Print("hello")
+}
 
 func main() {
+	test()
 
 	var strBuilder strings.Builder
 	strBuilder.Write([]byte{1, 2})
