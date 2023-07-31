@@ -5,6 +5,9 @@ import (
 	"sync"
 )
 
+/*
+*
+ */
 func main() {
 	var oc sync.Once
 

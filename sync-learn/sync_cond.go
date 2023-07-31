@@ -6,6 +6,9 @@ import (
 	"time"
 )
 
+/*
+*
+ */
 func main() {
 	// mailbox 代表信箱。
 	// 0代表信箱是空的，1代表信箱是满的。

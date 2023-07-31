@@ -6,6 +6,9 @@ import (
 )
 
 func main() {
+
+	// var ch chan int ( 只声明，没有初始化，是一个nil，对 nil 的channel 都会被阻塞）
+
 	//ch := make(chan int,3)
 
 	//ch<- 1
