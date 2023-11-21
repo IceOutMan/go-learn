@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func slice() {
 	fmt.Println("================== SLICE ==================")
@@ -42,3 +45,4 @@ func slice() {
 	fmt.Printf("len: %d , cap: %d\n", len(slice5), cap(slice5))
 
 }
+
