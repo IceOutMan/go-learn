@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"log"
 	"os"
 )
 
@@ -25,6 +26,18 @@ func callCreatePanic() {
 	createPanic()
 }
 
+func hello(name string) (string, error) {
+	// If no name was given, return an error with a message.
+	if name == "" {
+		return "", errors.New("empty name")
+	}
+
+	// If a name was received, return a value that embeds the name
+	// in a greeting message.
+	message := fmt.Sprintf("Hi, %v. Welcome!", name)
+	return message, nil
+}
+
 func main() {
 	err := chargeValue(1, 2)
 	fmt.Println(err)
@@ -42,4 +55,9 @@ func main() {
 
 	callCreatePanic()
 
+	message, err := hello("")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(message)
 }
